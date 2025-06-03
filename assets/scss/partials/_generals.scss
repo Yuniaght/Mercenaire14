@@ -1,0 +1,51 @@
+// Generals
+// Text
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: $roboto;
+}
+
+h1{
+    font-size: $mainTitle;
+}
+
+h2{
+    font-size: $subTitle;
+}
+  
+h3{
+    font-size: $minorTitle;
+}
+  
+p,a{
+    font-size: $paragraph;
+}
+
+// Background and text color
+.dark {
+  background-color: $grey;
+  color: $white;
+}
+
+.light {
+  background-color: $lightYellow;
+  color: $darkbrown;
+}
+
+// Button 
+.btn {
+  padding: 0.6rem 1rem;
+  background-image: linear-gradient($lightYellow, $darkYellow);
+  color: $grey;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  &:hover {
+    background-image: linear-gradient($lightorange, $darkbrown);
+    color: black;
+  }
+}

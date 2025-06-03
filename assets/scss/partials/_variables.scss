@@ -1,0 +1,31 @@
+// Variables
+
+// Text
+// Size 
+$paragraph:        1.3rem;
+$mainTitle:        3rem;
+$subTitle:         2rem;
+$minorTitle:       1.7rem;
+
+// Font
+$roboto : "Roboto", sans-serif;
+$tangerine: "Tangerine", cursive;
+
+// Colors
+$grey:             #303030; // Jet
+$white:            #f3f3f3; // White Smoke
+$lightYellow:      #f4c97a; // Sunset
+$darkYellow:       #736139; // Fielddrab
+$lightorange:      #F7DAB4; // light orange
+$darkbrown:        #4C342F; // Van Dyke
+$errorRed:         #A23131; // Auburn
+
+// Responsive 
+
+// Breakpoints
+$tabletsize:       768px;
+$desktopsize:      962px;
+
+//Rules 
+$tablet:           "screen and (min-width: #{$tabletsize})";
+$desktop:          "screen and (min-width: #{$desktopsize})";
