@@ -1,0 +1,33 @@
+// Newsletter
+
+.newsletter{
+  p{
+    padding-bottom: 2rem;
+  }
+  // Input
+  input {
+    background-color: $grey;
+    color: $lightYellow;
+    width: 40%;
+    height: 40px;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    font-size: $paragraph;
+    font-family: $roboto;
+    border: 1px solid $lightYellow;
+    &::placeholder{
+      color: $lightYellow;
+      $font-size: $paragraph
+    }
+  }
+  @media #{$tablet} {
+    input {
+      width:65%;
+    }
+  }
+  @media #{$desktop} {
+    input {
+      width: 75%;
+    }
+  }
+}

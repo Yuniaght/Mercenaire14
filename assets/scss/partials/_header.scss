@@ -1,8 +1,11 @@
+// Navbar
 nav {
   background-color: $grey;
   padding: 1rem;
-  position: sticky;
+  position: fixed;
   top: 0px;
+  left: 0px;
+  width: 100%;
   z-index: 10;
   display: flex;
   flex-wrap: wrap;
@@ -10,7 +13,7 @@ nav {
   align-items: center;
   .brand {
     text-decoration: none;
-    color: $white;
+    color: $lightYellow;
     font-size: $mainTitle;
     font-family: $tangerine;
   }
@@ -21,10 +24,6 @@ nav {
       margin: 0 0.5rem;
 
     }
-  }
-
-  div>*{
-    margin: 0.5rem;
   }
 
   .navopened {
@@ -50,14 +49,16 @@ nav {
   }
 }
 
-.hero {
+
+// Banner
+.banner {
   height: 60vh;
   background-image: url("../img/banner.png");
   background-blend-mode: color;
   background-color: #21212190;
   background-position: center;
   overflow: hidden;
-  .hero-content {
+  .banner-content {
     padding: 1rem;
     margin: 7rem 0 0 1.5rem;
     width: 85%;
@@ -74,14 +75,14 @@ nav {
   }
 
   @media #{$tablet} {
-    .hero-content {
+    .banner-content {
       margin: 8rem 0 0 3rem;
       width: 70%;
     }
   }
   
   @media #{$desktop} {
-    .hero-content {
+    .banner-content {
       margin: 9rem 0 0 3rem;
       width: 55%;
     }

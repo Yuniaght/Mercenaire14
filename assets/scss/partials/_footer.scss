@@ -1,0 +1,38 @@
+// Footer
+
+footer{
+  border-top: 1px solid $lightYellow;
+  text-align: center;
+  p{
+    padding: 0.7rem;
+  }
+  br{
+    padding: 0.7rem
+  }
+  * {
+    color: $darkYellow;
+    font-size: 0.9rem;
+  }
+  a {
+    text-decoration: none;
+    color: $darkYellow;
+  }
+  .socials {
+    a{ 
+      padding: 0.25rem;
+      i {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  @media #{$tablet} {
+    display: flex;
+    justify-content: space-evenly;
+    * {
+      font-size: 0.7rem;
+    }
+    > * {
+      width: 30%;
+    }
+  }
+}
