@@ -1,0 +1,40 @@
+
+// Banner
+.banner {
+  height: 60vh;
+  background-image: url("../img/banner.png");
+  background-blend-mode: color;
+  background-color: #21212190;
+  background-position: center;
+  overflow: hidden;
+  .banner-content {
+    padding: 1rem;
+    margin: 5rem 0 0 1.5rem;
+    width: 85%;
+    background-color: #212121aa;
+    h1{
+      padding-bottom: 1rem;
+    }
+    p {
+      padding-bottom: 1.4rem;
+    }
+    .action{
+      padding-bottom: 0.8rem;
+    }
+  }
+
+  @media #{$tablet} {
+    .banner-content {
+      margin: 6.5rem 0 0 3rem;
+      width: 70%;
+    }
+  }
+  
+  @media #{$desktop} {
+    .banner-content {
+      margin: 7.5rem 0 0 3rem;
+      width: 55%;
+    }
+  }
+}
+

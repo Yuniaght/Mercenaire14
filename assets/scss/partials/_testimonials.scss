@@ -1,0 +1,28 @@
+// testimonials
+
+.testimonials {
+  .commentbox {
+    border: 1px solid $lightYellow;
+    border-radius: 3rem 0 0 0;
+    margin-bottom: 2rem;
+    .commentator {
+      font-family: $roboto;
+      font-size: 1.5rem;
+      display: flex;
+      border-bottom: 1px solid $lightYellow;
+      .profilePicture {
+        width: 100px;
+        height: auto;
+        border-radius: 50% 0 0 0;
+      }
+
+      .commentatorInfo {
+        margin: auto 0;
+        padding-left: 1rem;
+      }
+    }
+    .comment {
+      padding: 0.5rem;
+    }
+  }
+}

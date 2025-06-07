@@ -3,12 +3,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --animate-delay: 0.25s;
+}
+
 // Text Size and font
-h1,
 h2,
 h3,
 p,
-a {
+a,
+li {
   font-family: $roboto;
 }
 
@@ -25,8 +29,11 @@ h3{
     font-size: $minorTitle;
 }
   
-p,a{
+p,
+a,
+li{
     font-size: $paragraph;
+    line-height: 1.2;
 }
 
 // Background and text color
@@ -36,14 +43,11 @@ h3 {
   color: $lightYellow
 }
 
-.dark {
+body {
+  margin-top: 5rem;
   background-color: $grey;
   color: $white;
-}
-
-.light {
-  background-color: $lightYellow;
-  color: $darkbrown;
+  scroll-behavior: smooth;
 }
 
 // Button 

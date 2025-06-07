@@ -1,0 +1,90 @@
+// About - Team
+
+.picture {
+  grid-area: picture
+}
+
+.title {
+  grid-area: title
+}
+
+.content {
+  grid-area: content;
+}
+
+
+.team {
+  .teams {
+    .member {
+      margin: 0 auto 1rem auto;
+      border: 1px solid $lightYellow;
+      border-radius: 1rem;
+      display: grid;
+      width: 375px;
+      height: 600px;
+      grid-template-rows: auto, auto, auto;
+      grid-template-areas:
+        "title"
+        "picture"
+        "content";
+
+      .title {
+        text-align: center;
+        border-bottom: 1px solid $lightYellow;
+        border-radius: 1rem 1rem 0 0;
+        background-color: $darkbrown;
+        padding: 0.5rem 0;
+      }
+
+      .picture {
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 0 0 1rem 1rem;
+        object-fit: cover;
+      }
+
+      .content {
+        padding: 1rem;
+        li {
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+
+  @media #{$tablet} {
+    .teams {
+      .member {
+        width: 450px;
+        height: 500px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 200px 250px;
+        grid-template-areas:
+          "title title"
+          "picture content";
+      }
+
+      .picture {
+        height: 200px;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 0 0 1rem 0;
+      }
+
+      .content {
+        height: 600px;
+      }
+    }
+  }
+  @media #{$desktop} {
+    .teams{
+      margin: 0 -2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .member {
+      margin: 0 0.5rem;
+    }
+    
+  }
+}
