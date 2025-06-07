@@ -15,8 +15,9 @@
 
 .team {
   .teams {
+    margin: 0 -1rem;
     .member {
-      margin: 0 auto 1rem auto;
+      margin: 1rem auto;
       border: 1px solid $lightYellow;
       border-radius: 1rem;
       display: grid;

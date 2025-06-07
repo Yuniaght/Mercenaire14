@@ -16,24 +16,24 @@ li {
   font-family: $roboto;
 }
 
-h1{
-    font-size: $mainTitle;
+h1 {
+  font-size: $mainTitle;
 }
 
-h2{
-    font-size: $subTitle;
-    padding-bottom: 1rem;
+h2 {
+  font-size: $subTitle;
+  padding-bottom: 1rem;
 }
-  
-h3{
-    font-size: $minorTitle;
+
+h3 {
+  font-size: $minorTitle;
 }
-  
+
 p,
 a,
-li{
-    font-size: $paragraph;
-    line-height: 1.2;
+li {
+  font-size: $paragraph;
+  line-height: 1.2;
 }
 
 // Background and text color
@@ -44,10 +44,15 @@ h3 {
 }
 
 body {
-  margin-top: 5rem;
+  margin-top: 6rem;
   background-color: $grey;
   color: $white;
   scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: $lightYellow;
+  color: $darkbrown;
 }
 
 // Button 
@@ -59,9 +64,12 @@ body {
   text-decoration: none;
   border-radius: 25px;
   border: none;
-  &:hover {
-    background-image: linear-gradient($lightorange, $darkbrown);
-    color: black;
+
+  @media #{$desktop} {
+    &:hover {
+      background-image: linear-gradient($lightorange, $darkbrown);
+      color: black;
+    }
   }
 }
 
@@ -69,4 +77,3 @@ body {
 section {
   margin: 1rem 5%;
 }
-

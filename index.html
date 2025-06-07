@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Google Font : Roboto & Tangerine -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine&display=swap"
+    rel="stylesheet">
   <!-- Icofont -->
   <link rel="stylesheet" href="node_modules/icofont/dist/icofont.min.css">
   <!-- Animate CSS -->
@@ -17,98 +20,108 @@
   <link rel="stylesheet" href="assets/css/style.min.css">
   <title>Mercenaire14 - Votre rendez-vous pour des combats de qualité</title>
 </head>
+
 <body>
-<!-- Header -->
-<header>
-  <!-- Navbar -->
-  <nav>
-    <h1><a href="index.html" class="brand">Mercenaire14</a></h1>
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <h1><a href="index.html" class="brand">Mercenaire14</a></h1>
+      <div>
+        <a href="favorites.html" class="btn"><i class="icofont-favourite"></i></a>
+        <a href="cart.html" class="btn"><i class="icofont-cart"></i></a>
+        <button id="navmenu" class="btn" onclick="navmenu()"><i class="icofont-navigation-menu"></i></button>
+      </div>
+      <ul id="navlink" class="navlink">
+        <li><a href="index.html" class="btn">Acceuil</a></li>
+        <li><a href="about.html" class="btn">A propos</a></li>
+        <li><a href="shop.html" class="btn">Boutique</a></li>
+        <li><a href="customerServices.html" class="btn">Services client</a></li>
+        <li><a href="contact.html" class="btn">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- banner -->
+    <div class="banner">
+      <div class="banner-content animate__animated animate__backInLeft">
+        <h2>Mercenaire14</h2>
+        <p>
+          Envie de terrasser les défis les plus ardus de Final Fantasy XIV sans le stress de la recherche de groupe ?
+          Sur Mercenaire14, louez des experts pour vos raids, donjons et défis ultimes. Atteignez de nouveaux sommets et
+          obtenez les récompenses que vous méritez, facilement et efficacement !
+        </p>
+        <div class="action">
+          <a href="shop.html" class="btn">Boutique</a>
+          <a href="about.html#testimonials" class="btn">Avis</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- New and Hot Item Section -->
+    <section class="hotNNewItems">
+      <div class="mostViewedItems">
+        <h2>Les services les plus consulté</h2>
+        <div class="productcarousel">
+          <a href="product.html" class="hotproduct fade">
+            <img src="assets/img/products/product06.webp" alt="Image du Future réécrit">
+            <p class="productTitle">Future réecrit</p>
+          </a>
+          <a href="product.html" class="hotproduct fade">
+            <img src="assets/img/products/product05.webp" alt="Image du Future réécrit">
+            <p class="productTitle">Le protocol Oméga</p>
+          </a>
+          <a href="product.html" class="hotproduct fade">
+            <img src="assets/img/products/product08.webp" alt="Image du Future réécrit">
+            <p class="productTitle">Arcadion Tier 2 Savage</p>
+          </a>
+          <a class="prev" onclick="plusViewed(-1)">&#10094;</a>
+          <a class="next" onclick="plusViewed(1)">&#10095;</a>
+        </div>
+      </div>
+      <div class="mostRecentItems">
+        <h2>Les services les plus récent</h2>
+        <div class="productcarousel">
+          <a href="product.html" class="newproduct fade">
+            <img src="assets/img/products/product13.webp" alt="Image du Future réécrit">
+            <p class="productTitle">Irréel</p>
+          </a>
+          <a href="product.html" class="newproduct fade">
+            <img src="assets/img/products/product12.webp" alt="Image du Future réécrit">
+            <p class="productTitle">Zelenia Extrême</p>
+          </a>
+          <a href="product.html" class="newproduct fade">
+            <img src="assets/img/products/product11.webp" alt="Image du Future réécrit">
+            <p class="productTitle">Reine Sphène Extrême</p>
+          </a>
+          <a class="prev" onclick="plusNewer(-1)">&#10094;</a>
+          <a class="next" onclick="plusNewer(1)">&#10095;</a>
+        </div>
+      </div>
+    </section>
+    <!-- Newsleter Section -->
+    <section class="newsletter">
+      <h2>Prêts à Dominer Eorzea ? Découvrez Nos Prochaines Offres !</h2>
+      <p>Chers aventuriers d'Hydaelyn, préparez-vous à améliorer votre arsenal et vos compétences ! Notre boutique en
+        ligne s'apprête à débloquer de nouvelles sélections de contenus exclusifs pour vous aider à conquérir les défis
+        les plus ardus. Inscrivez-vous dès maintenant à notre newsletter et soyez les premiers à découvrir nos
+        arrivages, promotions et guides essentiels. Ne laissez plus la victoire vous échapper !</p>
+      <form action="#" method="post">
+        <input type="email" name="email" id="email" placeholder="Votre E-Mail">
+        <button class="btn" type="submit">S'inscrire à la newsletter</button>
+      </form>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>Mentions légales :
+      <br>
+      Ce site est une plateforme de vente indépendante et n'est en aucun cas affilié, sponsorisé, ou approuvé par Square
+      Enix Co., Ltd. Toutes les marques déposées, noms de personnages, images, logos et éléments graphiques liés à Final
+      Fantasy XIV sont la propriété exclusive de Square Enix Co., Ltd. et sont utilisés ici à des fins de référence et
+      de promotion des produits liés à l'univers du jeu. Nous ne revendiquons aucun droit de propriété sur ces éléments.
+    </p>
     <div>
-      <a href="favorites.html" class="btn"><i class="icofont-favourite"></i></a>
-      <a href="cart.html" class="btn"><i class="icofont-cart"></i></a>
-      <button id="navmenu" class="btn" onclick="navmenu()"><i class="icofont-navigation-menu"></i></button>
-    </div>
-    <ul id="navlink">
-      <li><a href="index.html" class="btn" >Acceuil</a></li>
-      <li><a href="about.html" class="btn" >A propos</a></li>
-      <li><a href="shop.html" class="btn">Boutique</a></li>
-      <li><a href="customerServices.html" class="btn">Services client</a></li>
-      <li><a href="contact.html" class="btn">Contact</a></li>
-    </ul>
-  </nav>
-  <!-- banner -->
-  <div class="banner">
-    <div class="banner-content animate__animated animate__backInLeft">
-      <h2>Mercenaire14</h2>
-      <p>
-        Envie de terrasser les défis les plus ardus de Final Fantasy XIV sans le stress de la recherche de groupe ? Sur Mercenaire14, louez des experts pour vos raids, donjons et défis ultimes. Atteignez de nouveaux sommets et obtenez les récompenses que vous méritez, facilement et efficacement !
-      </p>
-      <div class="action">
-        <a href="shop.html" class="btn">Boutique</a>
-        <a href="about.html#testimonials" class="btn">Avis</a>
-      </div>
-    </div>
-  </div>
-</header>
-<main>
-  <!-- New and Hot Item Section -->
-  <section class="hotNNewItems">
-    <div class="mostViewedItems">
-    <h2>Les services les plus consulté</h2>
-      <div class="productcarousel">
-        <a href="product.html" class="hotproduct fade">
-          <img src="assets/img/products/product06.webp" alt="Image du Future réécrit">
-          <p class="productTitle">Future réecrit</p>
-        </a>
-         <a href="product.html" class="hotproduct fade">
-          <img src="assets/img/products/product05.webp" alt="Image du Future réécrit">
-          <p class="productTitle">Le protocol Oméga</p>
-        </a>
-         <a href="product.html" class="hotproduct fade">
-          <img src="assets/img/products/product08.webp" alt="Image du Future réécrit">
-          <p class="productTitle">Arcadion Tier 2 Savage</p>
-        </a>
-        <a class="prev" onclick="plusViewed(-1)">&#10094;</a>
-        <a class="next" onclick="plusViewed(1)">&#10095;</a>
-      </div>
-    </div>
-    <div class="mostRecentItems">
-    <h2>Les services les plus récent</h2>
-      <div class="productcarousel">
-        <a href="product.html" class="newproduct fade">
-          <img src="assets/img/products/product13.webp" alt="Image du Future réécrit">
-          <p class="productTitle">Irréel</p>
-        </a>
-         <a href="product.html" class="newproduct fade">
-          <img src="assets/img/products/product12.webp" alt="Image du Future réécrit">
-          <p class="productTitle">Zelenia Extrême</p>
-        </a>
-         <a href="product.html" class="newproduct fade">
-          <img src="assets/img/products/product11.webp" alt="Image du Future réécrit">
-          <p class="productTitle">Reine Sphène Extrême</p>
-        </a>
-        <a class="prev" onclick="plusNewer(-1)">&#10094;</a>
-        <a class="next" onclick="plusNewer(1)">&#10095;</a>
-      </div>
-    </div>
-  </section>
-  <!-- Newsleter Section -->
-   <section class="newsletter">
-    <h2>Prêts à Dominer Eorzea ? Découvrez Nos Prochaines Offres !</h2>
-    <p>Chers aventuriers d'Hydaelyn, préparez-vous à améliorer votre arsenal et vos compétences ! Notre boutique en ligne s'apprête à débloquer de nouvelles sélections de contenus exclusifs pour vous aider à conquérir les défis les plus ardus. Inscrivez-vous dès maintenant à notre newsletter et soyez les premiers à découvrir nos arrivages, promotions et guides essentiels. Ne laissez plus la victoire vous échapper !</p>
-    <form action="#" method="post">
-      <input type="email" name="email" id="email" placeholder="Votre E-Mail">
-      <button class="btn" type="submit">S'inscrire à la newsletter</button>
-    </form>
-   </section>
-</main>
-<footer>
-  <p>Mentions légales : 
-    <br>
-    Ce site est une plateforme de vente indépendante et n'est en aucun cas affilié, sponsorisé, ou approuvé par Square Enix Co., Ltd. Toutes les marques déposées, noms de personnages, images, logos et éléments graphiques liés à Final Fantasy XIV sont la propriété exclusive de Square Enix Co., Ltd. et sont utilisés ici à des fins de référence et de promotion des produits liés à l'univers du jeu. Nous ne revendiquons aucun droit de propriété sur ces éléments.
-  </p>
-  <div>
-    <p>Carte du site : </p>
+      <p>Carte du site : </p>
       <ul>
         <li><a href="index.html">Acceuil</a></li>
         <li><a href="about.html">A propos</a></li>
@@ -116,19 +129,22 @@
         <li><a href="customerServices.html">Services client</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-  </div>
-  <div>
-    <p>Reseaux sociaux </p>
-    <p class="socials">
-      <a href="#" onclick="return false;"><i class="icofont-facebook"></i></a>
-      <a href="#" onclick="return false;"><i class="icofont-twitter"></i></a>
-      <a href="#" onclick="return false;"><i class="icofont-instagram"></i></a>
-      <a href="#" onclick="return false;"><i class="icofont-twitch"></i></a>
-      <a href="#" onclick="return false;"><i class="icofont-youtube-play"></i></a>
-  </p>
-  </div>
-</footer>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/index.js"></script>
+    </div>
+    <div>
+      <p>Reseaux sociaux </p>
+      <p class="socials">
+        <a href="#" onclick="return false;"><i class="icofont-facebook"></i></a>
+        <a href="#" onclick="return false;"><i class="icofont-twitter"></i></a>
+        <a href="#" onclick="return false;"><i class="icofont-instagram"></i></a>
+        <a href="#" onclick="return false;"><i class="icofont-twitch"></i></a>
+        <a href="#" onclick="return false;"><i class="icofont-youtube-play"></i></a>
+      </p>
+    </div>
+  </footer>
+  <!-- Main script -->
+  <script src="assets/js/main.js"></script>
+  <!-- Index specific script -->
+  <script src="assets/js/index.js"></script>
 </body>
+
 </html>
