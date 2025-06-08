@@ -1,0 +1,39 @@
+// Shop - search
+
+.shop {
+  .search {
+    width: 80%;
+    margin: 1rem auto;
+    form {
+      display: flex;
+      button {
+        border-radius: 1rem 0 0 1rem;
+        background-image: linear-gradient($lightYellow, $darkYellow);
+        border: none;
+        font-size: 2rem;
+      }
+
+      input[name="search"] {
+        margin-left: -4px;
+        height:2.5rem;
+        width: 100%;
+        border: {
+          width: 1px 1px 1px 0;
+          style: solid;
+          color: $lightYellow
+        }
+        background-color: $grey;
+        border-radius: 0 1rem 1rem 0;
+        color: $lightYellow;
+        &::placeholder {
+          color: $lightYellow;
+          padding-left: 1rem;
+          font: {
+            style: $roboto;
+            size: $paragraph; 
+          }
+        }
+      }
+    }
+  }
+}
