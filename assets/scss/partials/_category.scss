@@ -1,0 +1,40 @@
+// Category selector
+.category {
+
+  select,
+  select::picker(select) {
+    appearance: base-select;
+  }
+
+  select {
+    width: 30%;
+    background-color: $grey;
+    color: $lightYellow;
+    font-style: $roboto;
+    font-size: $paragraph;
+    border: none;
+  }
+
+  select::picker(select) {
+    background-color: $grey;
+    color: $lightYellow
+  }
+
+  @media #{$tablet} {
+    select {
+      width: 20%;
+    }
+  }
+
+  @media #{$desktop} {
+    select {
+      width: 15%;
+    }
+  }
+
+  @media #{$bigscreen} {
+    select {
+      width: 10%;
+    }
+  }
+}

@@ -1,6 +1,10 @@
 // Shop - Items
 
 .shop {
+  .category {
+    margin-bottom: 1rem;
+  }
+
   .shopcontainer {
     .item {
       position: relative;
@@ -14,8 +18,8 @@
       flex-direction: column;
       justify-content: space-between;
 
-      > img {
-        position:absolute;
+      >img {
+        position: absolute;
         z-index: -1;
         top: 0;
         left: 0;
@@ -24,11 +28,25 @@
         object-fit: cover;
       }
 
-      h3 {
-        padding: 0.25rem 0;
-        width: 100%;
-        text-align: center;
-        background-color: $greyseethrough;
+      .promotion {
+        position: absolute;
+        top: 45px;
+        right: 0;
+        background-color: $errorRed;
+        color: $lightYellow;
+        transform: rotate(45deg);
+        font-size: 4rem;
+        border-radius: 50%;
+      }
+
+      a {
+        text-decoration: none;
+        h3 {
+          padding: 0.25rem 0;
+          width: 100%;
+          text-align: center;
+          background-color: $greyseethrough;
+        }
       }
 
       .cardfooter {
@@ -37,11 +55,16 @@
 
         p {
           text-align: right;
+          .promotext{
+            text-decoration:line-through $errorRed;
+          }
         }
-
+          
         padding-bottom: 0.5rem;
 
         .action {
+          position: relative;
+          z-index: 10;
           display: flex;
           justify-content: center;
           gap: 0.25rem
@@ -49,18 +72,20 @@
       }
     }
   }
+
   @media #{$desktop} {
-    .shopcontainer{
+    .shopcontainer {
       width: 95%;
       margin: 0 auto;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 1.5rem;
-      .item{
+
+      .item {
         margin: 0;
         width: calc(192px *2);
       }
-    }   
+    }
   }
 }

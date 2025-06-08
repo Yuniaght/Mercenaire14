@@ -19,11 +19,10 @@ function plusNewer(n) {
 
 function showViewed(n) {
   clearTimeout(t1)
-  let i;
   let hotproduct = document.getElementsByClassName("hotproduct");
   if (n > hotproduct.length) {mostViewedIndex = 1}
   if (n < 1) {mostViewedIndex = hotproduct.length}
-  for (i = 0; i < hotproduct.length; i++) {
+  for (let i = 0; i < hotproduct.length; i++) {
     hotproduct[i].style.display = "none";
   }
   hotproduct[mostViewedIndex-1].style.display = "block";
@@ -32,11 +31,10 @@ function showViewed(n) {
 
 function showNewer(n) {
   clearTimeout(t2)
-  let i;
   let newproduct = document.getElementsByClassName("newproduct");
   if (n > newproduct.length) {mostNewerIndex = 1}
   if (n < 1) {mostNewerIndex = newproduct.length}
-  for (i = 0; i < newproduct.length; i++) {
+  for (let i = 0; i < newproduct.length; i++) {
     newproduct[i].style.display = "none";
   }
   newproduct[mostNewerIndex-1].style.display = "block";

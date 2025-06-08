@@ -1,0 +1,35 @@
+// pagination
+
+.pagination {
+  text-align: center;
+  width: 80%;
+  margin: 1rem auto;
+
+  p {
+    padding-bottom: 0.7rem;
+  }
+  
+  .pagelist {
+
+    .begin,
+    .middle,
+    .end {
+      background-image: linear-gradient($lightYellow, $darkYellow);
+
+      font: {
+        family: $roboto;
+        size: $paragraph
+      }
+      color: $grey;
+      text-decoration: none;
+      padding: 0.35rem 0.25rem;
+      margin: 1rem -2.5px;
+    }
+    .begin {
+      border-radius: 1rem 0 0 1rem;
+    }
+    .end {
+      border-radius: 0 1rem 1rem 0;
+    }
+  }
+}
