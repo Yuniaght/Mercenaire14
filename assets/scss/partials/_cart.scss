@@ -1,0 +1,128 @@
+// Cart
+
+// Grid names
+
+.productimg {
+  grid-area: productimg;
+}
+
+.productname {
+  grid-area: productname;
+}
+
+.productprice {
+  grid-area: productprice;
+}
+
+.itemactions {
+  grid-area: itemactions;
+}
+
+.total {
+  margin: 1rem 5%;
+  width: 100%;
+
+  p {
+    padding-bottom: 1rem;
+  }
+}
+
+.cart {
+  min-height: 85vh;
+  .cartheader {
+    display: none;
+    padding: 1rem 0;
+    width: 100%;
+    border-bottom: 1px solid $lightYellow;
+    margin-bottom: 0.5rem;
+
+    p {
+      width: 100%;
+      padding-right: 2rem;
+      text-align: right;
+    }
+  }
+
+  .cartcontent {
+    margin-top: 1.5rem;
+    width: 100%;
+
+    .cartitem {
+      border: 1px solid $lightYellow;
+      border-radius: 1rem;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+        "productimg productname"
+        "productimg productprice"
+        "itemactions itemactions";
+      grid-gap: 0.5rem;
+
+      .productimg {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .itemactions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+@media #{$tablet} {
+  .cart {
+    .cartheader {
+      display: block;
+    }
+
+    .cartcontent {
+      .cartitem {
+        grid-template-columns: 30% 50% 20%;
+        grid-template-rows: auto 2rem;
+        grid-template-areas:
+          "productimg productname productprice"
+          "productimg itemactions itemactions";
+          .productprice{
+            text-align: right;
+            padding-right: 1rem;
+          }
+      }
+    }
+  }
+}
+
+@media #{$desktop} {
+  .total {
+    border: 1px solid $lightYellow;
+    border-radius: 1rem;
+    width: 250px;
+    height: 100px;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    right: 1%;
+  }
+
+
+  .cart {
+    .cartheader {
+      width: 70%;
+    }
+    .cartcontent {
+      width: 70%;
+      .cartitem {
+        grid-template-rows: 100px 2rem;
+        grid-template-columns: 30% 45% 25%;
+      }
+    }
+  }
+}
