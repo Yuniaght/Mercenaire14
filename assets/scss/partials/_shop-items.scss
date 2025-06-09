@@ -1,6 +1,9 @@
 // Shop - Items
 
 .shop {
+  .search {
+    padding-top: 1rem;
+  }
   .category {
     margin-bottom: 1rem;
   }
@@ -63,8 +66,6 @@
         padding-bottom: 0.5rem;
 
         .action {
-          position: relative;
-          z-index: 10;
           display: flex;
           justify-content: center;
           gap: 0.25rem

@@ -3,6 +3,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --animate-delay: 0.25s;
 }
@@ -47,7 +50,6 @@ body {
   margin-top: 6rem;
   background-color: $grey;
   color: $white;
-  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -64,6 +66,7 @@ body {
   text-decoration: none;
   border-radius: 25px;
   border: none;
+  height: fit-content;
 
   @media #{$desktop} {
     &:hover {
