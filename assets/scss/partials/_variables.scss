@@ -8,13 +8,13 @@ $subTitle:         2rem;
 $minorTitle:       1.7rem;
 
 // Font
-$roboto : "Roboto", sans-serif;
-$tangerine: "Tangerine", cursive;
+$roboto :          "Roboto", sans-serif;
+$tangerine:        "Tangerine", cursive;
 
 // Colors
 $grey:             #303030; // Jet
-$greytranslucid:   #303030af; 
-$greyseethrough:   #303030de; 
+$greytranslucid:   #303030af; // Jet 68.63%
+$greyseethrough:   #303030de; // Jet 87.06%
 $white:            #f3f3f3; // White Smoke
 $lightYellow:      #f4c97a; // Sunset
 $darkYellow:       #736139; // Fielddrab
@@ -23,13 +23,12 @@ $darkbrown:        #4C342F; // Van Dyke
 $errorRed:         #A23131; // Auburn
 
 // Responsive 
-
 // Breakpoints
 $tabletsize:       768px;
 $desktopsize:      962px;
 $bigscreensize:    1200px;
 
-//Rules 
+// Media Rules 
 $tablet:           "screen and (min-width: #{$tabletsize})";
 $desktop:          "screen and (min-width: #{$desktopsize})";
 $bigscreen:        "screen and (min-width: #{$bigscreensize})";

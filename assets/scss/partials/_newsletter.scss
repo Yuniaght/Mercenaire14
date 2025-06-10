@@ -1,7 +1,6 @@
 // Newsletter
-
-.newsletter{
-  p{
+.newsletter {
+  p {
     padding-bottom: 2rem;
   }
   input {
@@ -14,14 +13,14 @@
     font-size: $paragraph;
     font-family: $roboto;
     border: 1px solid $lightYellow;
-    &::placeholder{
+    &::placeholder {
       color: $lightYellow;
-      $font-size: $paragraph
+      $font-size: $paragraph;
     }
   }
   @media #{$tablet} {
     input {
-      width:65%;
+      width: 65%;
     }
   }
   @media #{$desktop} {

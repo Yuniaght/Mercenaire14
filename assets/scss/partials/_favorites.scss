@@ -1,16 +1,5 @@
-// Cart
-
-.total {
-  margin: 1rem 5%;
-  width: 100%;
-
-  p {
-    padding-bottom: 1rem;
-  }
-}
-
+// favorites
 .favorites {
-
   // Grid names
   .productimg {
     grid-area: productimg;
@@ -85,14 +74,13 @@
 
   @media #{$desktop} {
     .favoritecontent {
-
       .favoriteitem {
         grid-template-rows: 100px 2rem;
         grid-template-columns: 30% 45% 25%;
       }
     }
   }
-  @media #{$bigscreen}{
+  @media #{$bigscreen} {
     .favoritecontent {
       display: flex;
       justify-content: flex-start;

@@ -2,15 +2,16 @@
 #services h2 {
   padding-top: 1rem;
 }
-
+#services a {
+  text-decoration: none;
+  color: $lightYellow;
+}
 .serviceContainer {
   margin: 1rem -0.5rem;
-
   .service {
     border: 1px solid $lightYellow;
     width: 350px;
     margin: 1rem auto;
-
     .title {
       display: flex;
       justify-content: center;
@@ -19,40 +20,28 @@
       background-color: $darkbrown;
       padding: 0.7rem 0;
       height: 75px;
-
       i {
         font-size: 2rem;
         padding: 0 0.7rem;
         color: $lightorange;
       }
-
       h3 {
         text-align: center;
       }
-
-      ;
     }
-
     p {
       padding: 0.5rem;
     }
   }
-
   @media #{$tablet} {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
   @media #{$desktop} {
-    margin: 0 7%
+    margin: 0 7%;
   }
   @media #{$bigscreen} {
-     margin: 0 10%;
+    margin: 0 10%;
   }
-
-}
-
-#services a {
-  text-decoration: none;
-  color: $lightYellow;
 }

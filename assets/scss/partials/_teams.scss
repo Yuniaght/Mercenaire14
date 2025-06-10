@@ -1,19 +1,18 @@
 // About - Team
 
-.picture {
-  grid-area: picture
-}
-
-.title {
-  grid-area: title
-}
-
-.content {
-  grid-area: content;
-}
-
-
 .team {
+  .picture {
+    grid-area: picture;
+  }
+
+  .title {
+    grid-area: title;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
   .teams {
     margin: 0 -1rem;
 
@@ -67,6 +66,7 @@
         grid-template-areas:
           "title title"
           "picture content";
+
         .picture {
           height: 100%;
           border-radius: 0 0 0 1rem;
@@ -86,6 +86,5 @@
     .member {
       margin: 0 0.5rem;
     }
-
   }
 }

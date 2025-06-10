@@ -43,7 +43,7 @@
 
       input::placeholder {
         color: $lightYellow;
-        $font-size: $paragraph
+        $font-size: $paragraph;
       }
 
       div {
@@ -64,14 +64,14 @@
 
         select::picker(select) {
           background-color: $grey;
-          color: $lightYellow
+          color: $lightYellow;
         }
       }
     }
   }
   @media #{$desktop} {
     height: 78vh;
-    fieldset{
+    fieldset {
       width: 60%;
     }
   }

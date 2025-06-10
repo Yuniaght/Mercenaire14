@@ -1,16 +1,13 @@
 // pagination
-
 .pagination {
   text-align: center;
   width: 80%;
   margin: 1rem auto;
-
   p {
     padding-bottom: 0.7rem;
   }
-  
-  .pagelist {
 
+  .pagelist {
     .begin,
     .middle,
     .end {
@@ -18,7 +15,7 @@
 
       font: {
         family: $roboto;
-        size: $paragraph
+        size: $paragraph;
       }
       color: $grey;
       text-decoration: none;

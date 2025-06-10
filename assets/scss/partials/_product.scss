@@ -1,10 +1,8 @@
-// Product 
-
+// Product
 .product {
   padding-top: 1rem;
   .productimg {
     width: 100%;
-
     img {
       border: 1px solid $lightYellow;
       border-radius: 1rem;
@@ -13,7 +11,6 @@
       object-fit: contain;
     }
   }
-
   .productcontent {
     .productdetail {
       position: sticky;
@@ -27,17 +24,14 @@
       justify-content: space-evenly;
       align-items: center;
     }
-
     .producttext {
       margin-top: -4rem;
       padding-bottom: 4rem;
-
       h3,
       p,
       ul li {
         padding-bottom: 1rem;
       }
-
       ul {
         li {
           &::before {
@@ -46,13 +40,10 @@
         }
       }
     }
-
   }
-
   @media #{$tablet} {
     display: flex;
     gap: 1.5rem;
-
     .productcontent {
       .productdetail {
         position: relative;
@@ -62,11 +53,9 @@
         background-color: $grey;
         border-top: none;
       }
-
       .producttext {
         margin-top: 0;
         padding-bottom: 0;
-
         ul {
           li {
             padding-left: 2rem;

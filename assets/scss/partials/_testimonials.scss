@@ -5,6 +5,7 @@
     border: 1px solid $lightYellow;
     border-radius: 3rem 0 0 0;
     margin-bottom: 2rem;
+
     .commentator {
       font-family: $roboto;
       font-size: 1.5rem;
@@ -12,6 +13,7 @@
       border-bottom: 1px solid $lightYellow;
       background-color: $darkbrown;
       border-radius: 3rem 0 0 0;
+
       .profilePicture {
         width: 100px;
         height: auto;
@@ -23,19 +25,21 @@
         padding-left: 1rem;
       }
     }
+
     .comment {
       padding: 0.5rem;
     }
   }
+
   @media #{$desktop} {
     .commentContainer {
-      display:flex;
+      display: flex;
       flex-wrap: wrap;
+
       .commentbox {
         margin: 0.25rem;
         width: 49%;
       }
     }
-    
   }
 }

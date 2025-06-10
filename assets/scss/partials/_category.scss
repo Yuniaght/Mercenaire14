@@ -1,6 +1,5 @@
 // Category selector
 .category {
-
   select,
   select::picker(select) {
     appearance: base-select;
@@ -17,7 +16,7 @@
 
   select::picker(select) {
     background-color: $grey;
-    color: $lightYellow
+    color: $lightYellow;
   }
 
   @media #{$tablet} {

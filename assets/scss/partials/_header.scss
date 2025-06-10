@@ -18,34 +18,31 @@ nav {
     font-size: $mainTitle;
     font-family: $tangerine;
   }
-  ul{
+  ul {
     display: none;
     text-align: center;
     li {
       margin: 0 0.5rem;
-
     }
   }
-
   .navopened {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis:100%;
-    li{
+    flex-basis: 100%;
+    li {
       margin: 1rem;
     }
   }
-
   @media #{$desktop} {
-    ul{
+    ul {
       display: flex;
     }
-    button{
+    button {
       display: none;
     }
     div {
-      order:3;
+      order: 3;
     }
   }
 }

@@ -1,33 +1,27 @@
 // Home
-
 // New and most viewed section
 .hotNNewItems {
   h2 {
     padding-bottom: 1rem;
   }
-
   .mostViewedItems,
   .mostRecentItems {
     padding-bottom: 1.5rem;
   }
-
   .productcarousel {
     max-width: $tabletsize;
     position: relative;
     margin: auto;
     border: 1px solid $lightYellow;
     border-radius: 1rem;
-
     .hotproduct,
     .newproduct {
       display: none;
-
       img {
         border-radius: 1rem;
         max-width: 100%;
       }
     }
-
     .prev,
     .next {
       cursor: pointer;
@@ -43,12 +37,10 @@
       border-radius: 0 3px 3px 0;
       user-select: none;
     }
-
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
     }
-
     .productTitle {
       color: $lightYellow;
       background-color: $greytranslucid;
@@ -60,33 +52,28 @@
       width: 100%;
       text-align: center;
     }
-
     .fade {
       animation-name: fade;
       animation-duration: 1.5s;
     }
-
     @keyframes fade {
       from {
-        opacity: .4
+        opacity: 0.4;
       }
-
       to {
-        opacity: 1
+        opacity: 1;
       }
     }
   }
-
   @media #{$desktop} {
     display: flex;
     justify-content: space-between;
-
     .mostViewedItems,
     .mostRecentItems {
       max-width: 49%;
     }
     .productTitle {
-      padding: 1.5rem
+      padding: 1.5rem;
     }
   }
 }

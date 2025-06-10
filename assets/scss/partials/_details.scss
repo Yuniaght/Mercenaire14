@@ -7,9 +7,9 @@
 
   p,
   li {
-    padding: 0.75rem
+    padding: 0.75rem;
   }
-  
+
   .detailcard {
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@
   @media #{$tablet} {
     ul {
       margin: 0 -2rem;
-      display:flex;
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }

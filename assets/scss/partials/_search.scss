@@ -1,5 +1,4 @@
 // Shop - search
-
 .shop {
   .search {
     width: 80%;
@@ -12,15 +11,14 @@
         border: none;
         font-size: 2rem;
       }
-
       input[name="search"] {
         margin-left: -4px;
-        height:2.5rem;
+        height: 2.5rem;
         width: 100%;
         border: {
           width: 1px 1px 1px 0;
           style: solid;
-          color: $lightYellow
+          color: $lightYellow;
         }
         background-color: $grey;
         border-radius: 0 1rem 1rem 0;
@@ -30,7 +28,7 @@
           padding-left: 1rem;
           font: {
             style: $roboto;
-            size: $paragraph; 
+            size: $paragraph;
           }
         }
       }
