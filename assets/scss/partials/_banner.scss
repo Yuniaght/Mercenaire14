@@ -8,13 +8,16 @@
   overflow: hidden;
   .banner-content {
     padding: 1rem;
-    margin: 5rem 0 0 1.5rem;
+    margin-top: 7.5%;
+    margin-left: 5%;
     width: 85%;
     background-color: $greytranslucid;
+    border-radius: 5%;
     h1 {
       padding-bottom: 1rem;
     }
     p {
+      font-size: clamp(1rem, 5vw, $paragraph);
       padding-bottom: 1.4rem;
     }
     .action {
@@ -24,14 +27,13 @@
 
   @media #{$tablet} {
     .banner-content {
-      margin: 6.5rem 0 0 3rem;
+      margin-right: 10%;
       width: 70%;
     }
   }
 
   @media #{$desktop} {
     .banner-content {
-      margin: 7.5rem 0 0 3rem;
       width: 55%;
     }
   }
