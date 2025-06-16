@@ -74,6 +74,9 @@ body {
       background-image: linear-gradient($lightorange, $darkbrown);
       color: black;
     }
+    &:active {
+      background-image: linear-gradient($white, $lightorange);
+    }
   }
 }
 
